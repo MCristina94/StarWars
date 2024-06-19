@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../Component/Card';
+import Contact from './Contact';
 
 const Home = () => {
 
@@ -31,6 +32,7 @@ const Home = () => {
       <div>
         {personajes && personajes.map(personaje => <Card key={personaje.id} personaje={personaje}/> )}
       </div>
+      <Contact/>
     </div>
   )
 }
